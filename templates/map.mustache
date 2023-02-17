@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+crossorigin=""/>
+
+<div class="mx-auto" id="map">
+    {{#sitename}}
+        todo : implement custom regex for csv generation / reading
+    {{/sitename}}
+</div>
+
+
+
+
+
+{{#js}}
+require (['core/first'],function(){
+    require(['mod_vagmap/main'], function(module) {
+        module.displayMap();
+    });
+});
+
+{{/js}}
